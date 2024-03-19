@@ -1,0 +1,280 @@
+/* * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} */
+
+.row {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+a {
+    text-decoration:none;
+}
+li {
+    display: inline-block;
+}
+
+
+.memoContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.memo {
+    font-family: 'Trebuchet MS';
+    background: #000;
+}
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+.informBlock{
+    width: 30%;
+    height: 320px;
+    background: #1b1b1b;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: .4s;
+}
+.informBlock i {
+    color: #e9204f;
+    font-size: 35px;
+    margin-top: 20px;
+    transition: .4s;
+}
+.mainText {
+    color: #fff;
+    margin: 55px 0 0 0;
+    font-size: 20px;
+}
+.underlineBlock {
+    height: 0;
+    width: 35px;
+    border-top: 2px solid #e9204f;
+    margin-top: 10px;
+    transition: .4s;
+}
+.secondText{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.informBlock:hover {
+    background: #e9204f;
+}
+.informBlock:hover i {
+    color: #fff;
+}
+.informBlock:hover .underlineBlock {
+    border-color: #fff;
+}
+.wrapText {
+    margin-top: 25px;
+    font-size: 35px;
+    color: #e9204f;
+    padding-top: 25px;
+}
+
+
+/* Карточка */
+.newstitle {
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.product {
+    border-radius: 25px;
+    background: #ed3f00;
+    display: flex;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    max-width: 220px;
+    display: inline-block;
+}
+.info h3 {
+    text-align: center;
+    margin-top: 25px;
+}
+.info h5 { 
+    text-align: center;
+    margin-top: 15px;
+}
+.fullbtn {
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    color: #1b1b1b;
+}
+
+.product {
+    
+    width: 470px;
+    height: 250px;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+.image img {
+    height: 300px;
+    /* width: 100%; */
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.info h3{
+    font-size: 21px;
+    
+}
+
+.fullProduct {
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.fullProduct p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.fullProduct h3 {
+    text-indent: 35px;
+    letter-spacing: 1px;
+    line-height: 20px;
+   
+}
+.textnews {
+    margin-bottom: 25px;
+}
+
+
+/* Главный экран */
+.background {
+    
+
+    background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mainscreen {
+    /* height: 100vh;
+    width: 100vh; */
+    color: #ed3f00;
+    /* -webkit-text-stroke:1px #b31217;
+  -webkit-text-fill-color:transparent; */
+}
+
+.mainscreen h1{
+    font-size: 60px;
+}
+.mainscreen h2{
+    font-size: 30px;
+}
+
+
+/* .mainscreen {
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.mainscreen h1 {
+    margin: 0
+} */
+
+
+/* .mainscreen h1 {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+/* CSS */
+
+.btn {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.btn{
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-position: -20px -20px;
+}
+
+.btn:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
